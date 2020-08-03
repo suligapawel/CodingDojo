@@ -4,7 +4,7 @@
     {
         private const int SPARE_POINTS = 10;
 
-        private Roll _firstRoll;
+        private readonly Roll _firstRoll;
         private Roll? _bonus;
 
         public SpareFrame(int knockedPins)
