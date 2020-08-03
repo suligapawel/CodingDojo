@@ -16,7 +16,7 @@
             }
             else
             {
-                _bonus = Roll.Of((_bonus + actualFrame.FirstRoll));
+                _bonus = Roll.Of(_bonus + actualFrame.FirstRoll);
             }
         }
     }
