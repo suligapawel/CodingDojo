@@ -16,11 +16,22 @@ namespace CodingDojo.Potter.Test
         [Test]
         public void When_BuyOneCopyOfBook_return_8euro()
         {
-            _basket.InsertBook();
+            _basket.InsertBook(new Book(1));
 
             int cost = _basket.Buy();
 
             Assert.That(cost, Is.EqualTo(8));
+        }
+
+        [Test]
+        public void When_BuyTwoCopyOfSameBook_return_16euro()
+        {
+            _basket.InsertBook(new Book(1));
+            _basket.InsertBook(new Book(1));
+
+            int cost = _basket.Buy();
+
+            Assert.That(cost, Is.EqualTo(16));
         }
     }
 }

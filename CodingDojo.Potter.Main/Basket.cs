@@ -1,14 +1,24 @@
-﻿namespace CodingDojo.Potter.Main
+﻿using System.Collections.Generic;
+
+namespace CodingDojo.Potter.Main
 {
     public class Basket
     {
-        public void InsertBook()
+        private readonly List<Book> _booksInBasket;
+
+        public Basket()
         {
+            _booksInBasket = new List<Book>();
+        }
+
+        public void InsertBook(Book book)
+        {
+            _booksInBasket.Add(book);
         }
 
         public int Buy()
         {
-            return 8;
+            return _booksInBasket.Count * 8;
         }
     }
 }
