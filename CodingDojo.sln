@@ -11,9 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingDojo.Bowling.Test", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{0BA8864B-5DFD-4C35-A02E-60FEFA681955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.FizzBuzz.Main", "CodingDojo.FizzBuzz.Main\CodingDojo.FizzBuzz.Main.csproj", "{45E263C1-5E0B-46D6-9ED7-12154F480111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingDojo.FizzBuzz.Main", "CodingDojo.FizzBuzz.Main\CodingDojo.FizzBuzz.Main.csproj", "{45E263C1-5E0B-46D6-9ED7-12154F480111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.FizzBuzz.Test", "CodingDojo.FizzBuzz.Test\CodingDojo.FizzBuzz.Test.csproj", "{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingDojo.FizzBuzz.Test", "CodingDojo.FizzBuzz.Test\CodingDojo.FizzBuzz.Test.csproj", "{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Potter", "Potter", "{BE52DC69-CCC3-47BC-8E95-F4AFB22C1EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.Potter.Main", "CodingDojo.Potter.Main\CodingDojo.Potter.Main.csproj", "{36721742-6775-48FA-9F2E-8551B8C4CC3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.Potter.Test", "CodingDojo.Potter.Test\CodingDojo.Potter.Test.csproj", "{A170B763-0502-4006-BA0F-275EDB38965A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36721742-6775-48FA-9F2E-8551B8C4CC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36721742-6775-48FA-9F2E-8551B8C4CC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36721742-6775-48FA-9F2E-8551B8C4CC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36721742-6775-48FA-9F2E-8551B8C4CC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A170B763-0502-4006-BA0F-275EDB38965A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A170B763-0502-4006-BA0F-275EDB38965A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A170B763-0502-4006-BA0F-275EDB38965A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A170B763-0502-4006-BA0F-275EDB38965A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,8 @@ Global
 		{660E8774-796D-483D-8CFD-56120664D495} = {CF5DEEDC-AF30-4468-94FA-8BD144ADFECA}
 		{45E263C1-5E0B-46D6-9ED7-12154F480111} = {0BA8864B-5DFD-4C35-A02E-60FEFA681955}
 		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC} = {0BA8864B-5DFD-4C35-A02E-60FEFA681955}
+		{36721742-6775-48FA-9F2E-8551B8C4CC3E} = {BE52DC69-CCC3-47BC-8E95-F4AFB22C1EDC}
+		{A170B763-0502-4006-BA0F-275EDB38965A} = {BE52DC69-CCC3-47BC-8E95-F4AFB22C1EDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F9A0B3D-22D0-42DF-9E3C-B9984A5ED44B}
