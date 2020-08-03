@@ -1,25 +1,18 @@
-﻿using System;
-
-namespace CodingDojo.Bowling.Main
+﻿namespace CodingDojo.Bowling.Main
 {
-    public sealed class Roll
+    public struct Roll
     {
-        public int KnockedPins { get; }
+        private readonly int _knockedPins;
 
         private Roll(int knockedPins)
         {
-            KnockedPins = knockedPins;
+            _knockedPins = knockedPins;
         }
 
         public static Roll Of(int knockedPins) => new Roll(knockedPins);
-        public static Roll Copy(Roll otherRoll) => Roll.Of(otherRoll.KnockedPins);
+        public static Roll Copy(Roll otherRoll) => Roll.Of(otherRoll._knockedPins);
 
-        public Roll AddKnockedDownPins(Roll otherRoll) => this + otherRoll;
-
-        public static Roll operator +(Roll rollA, Roll rollB)
-        {
-            int addResult = rollA.KnockedPins + rollB.KnockedPins;
-            return Roll.Of(addResult);
-        }
+        public static int operator +(Roll? rollA, Roll rollB) => (rollA?._knockedPins ?? 0) + rollB._knockedPins;
+        public static int operator +(Roll? rollA, int valuFromRollB) => (rollA?._knockedPins ?? 0) + valuFromRollB;
     }
 }

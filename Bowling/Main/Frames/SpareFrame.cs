@@ -3,7 +3,7 @@
     public class SpareFrame : IFrame
     {
         private const int SPARE_POINTS = 10;
-        private Roll _bonus;
+        private Roll? _bonus;
 
         public Roll FirstRoll { get; }
 
@@ -12,7 +12,7 @@
             FirstRoll = Roll.Of(knockedPins);
         }
 
-        public int Score() => SPARE_POINTS + (_bonus?.KnockedPins ?? 0);
+        public int Score() => _bonus + SPARE_POINTS;
 
         public void TryAddBonus(IFrame actualFrame)
         {

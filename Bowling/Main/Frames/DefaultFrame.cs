@@ -11,11 +11,7 @@
             _secondRoll = Roll.Of(secondKnockedPins);
         }
 
-        public int Score()
-        {
-            Roll sumOfRolls = FirstRoll + _secondRoll;
-            return sumOfRolls.KnockedPins;
-        }
+        public int Score() => FirstRoll + _secondRoll;
 
         public void TryAddBonus(IFrame frame) { }
     }

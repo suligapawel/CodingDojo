@@ -3,10 +3,10 @@
     public class StrikeFrame : IFrame
     {
         private const int STRIKE_POINTS = 10;
-        private Roll _bonus;
+        private Roll? _bonus;
 
         public Roll FirstRoll => Roll.Of(STRIKE_POINTS);
-        public int Score() => STRIKE_POINTS + (_bonus?.KnockedPins ?? 0);
+        public int Score() => _bonus + STRIKE_POINTS;
 
         public void TryAddBonus(IFrame actualFrame)
         {
@@ -16,7 +16,7 @@
             }
             else
             {
-                _bonus = _bonus.AddKnockedDownPins(actualFrame.FirstRoll);
+                _bonus = Roll.Of((_bonus + actualFrame.FirstRoll));
             }
         }
     }
