@@ -2,16 +2,17 @@
 {
     public class DefaultFrame : IFrame
     {
-        public Roll FirstRoll { get; }
+        private readonly Roll _firstRoll;
         private readonly Roll _secondRoll;
 
         public DefaultFrame(int firstKnockedPins, int secondKnockedPins)
         {
-            FirstRoll = Roll.Of(firstKnockedPins);
+            _firstRoll = Roll.Of(firstKnockedPins);
             _secondRoll = Roll.Of(secondKnockedPins);
         }
 
-        public int Score() => FirstRoll + _secondRoll;
+        public int Score() => _firstRoll + _secondRoll;
+        public int ScoreAfterFirstRoll() => _firstRoll.KnockedPins;
 
         public void TryAddBonus(IFrame frame) { }
     }

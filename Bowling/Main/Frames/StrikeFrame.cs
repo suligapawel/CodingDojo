@@ -5,8 +5,8 @@
         private const int STRIKE_POINTS = 10;
         private Roll? _bonus;
 
-        public Roll FirstRoll => Roll.Of(STRIKE_POINTS);
         public int Score() => _bonus + STRIKE_POINTS;
+        public int ScoreAfterFirstRoll() => STRIKE_POINTS;
 
         public void TryAddBonus(IFrame actualFrame)
         {
@@ -16,7 +16,7 @@
             }
             else
             {
-                _bonus = Roll.Of(_bonus + actualFrame.FirstRoll);
+                _bonus = Roll.Of(_bonus + actualFrame.ScoreAfterFirstRoll());
             }
         }
     }

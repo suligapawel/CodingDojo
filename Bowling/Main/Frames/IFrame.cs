@@ -4,8 +4,8 @@ namespace CodingDojo.Bowling.Main.Frames
 {
     public interface IFrame
     {
-        Roll FirstRoll { get; }
         int Score();
+        int ScoreAfterFirstRoll();
 
         void TryAddBonus(IFrame actualFrame);
     }
