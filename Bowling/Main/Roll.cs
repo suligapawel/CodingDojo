@@ -1,14 +1,25 @@
-﻿namespace CodingDojo.Bowling.Main
+﻿using System;
+
+namespace CodingDojo.Bowling.Main
 {
-    public class Roll
+    public sealed class Roll
     {
         public int KnockedPins { get; }
 
-        public Roll(int knockedPins)
+        private Roll(int knockedPins)
         {
             KnockedPins = knockedPins;
         }
 
-        public Roll AddKnockedDownPins(Roll otherRoll) => new Roll(KnockedPins + otherRoll.KnockedPins);
+        public static Roll Of(int knockedPins) => new Roll(knockedPins);
+        public static Roll Copy(Roll otherRoll) => Roll.Of(otherRoll.KnockedPins);
+
+        public Roll AddKnockedDownPins(Roll otherRoll) => this + otherRoll;
+
+        public static Roll operator +(Roll rollA, Roll rollB)
+        {
+            int addResult = rollA.KnockedPins + rollB.KnockedPins;
+            return Roll.Of(addResult);
+        }
     }
 }

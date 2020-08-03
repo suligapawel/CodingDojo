@@ -7,9 +7,9 @@
 
         public Roll FirstRoll { get; }
 
-        public SpareFrame(int firstRoll)
+        public SpareFrame(int knockedPins)
         {
-            FirstRoll = new Roll(firstRoll);
+            FirstRoll = Roll.Of(knockedPins);
         }
 
         public int Score() => SPARE_POINTS + (_bonus?.KnockedPins ?? 0);
@@ -17,7 +17,7 @@
         public void TryAddBonus(IFrame actualFrame)
         {
             if (_bonus == null)
-                _bonus = new Roll(actualFrame.FirstRoll.KnockedPins);
+                _bonus = Roll.Copy(actualFrame.FirstRoll);
         }
     }
 }

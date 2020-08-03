@@ -5,13 +5,18 @@
         public Roll FirstRoll { get; }
         private readonly Roll _secondRoll;
 
-        public DefaultFrame(int firstRoll, int secondRoll)
+        public DefaultFrame(int firstKnockedPins, int secondKnockedPins)
         {
-            FirstRoll = new Roll(firstRoll);
-            _secondRoll = new Roll(secondRoll);
+            FirstRoll = Roll.Of(firstKnockedPins);
+            _secondRoll = Roll.Of(secondKnockedPins);
         }
 
-        public int Score() => FirstRoll.KnockedPins + _secondRoll.KnockedPins;
+        public int Score()
+        {
+            Roll sumOfRolls = FirstRoll + _secondRoll;
+            return sumOfRolls.KnockedPins;
+        }
+
         public void TryAddBonus(IFrame frame) { }
     }
 }
