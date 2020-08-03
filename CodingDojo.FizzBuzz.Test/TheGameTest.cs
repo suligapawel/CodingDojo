@@ -24,14 +24,31 @@ namespace CodingDojo.FizzBuzz.Test
         }
 
         [Test]
-        public void When_nexNumberIsDivideByThree_return_fizzWord()
+        public void When_nexNumberIsDivideBy3_return_fizzWord()
         {
-            _theGame.Count();
-            _theGame.Count();
+            ExecuteCountMethod(2);
 
             string result = _theGame.Count();
 
             Assert.That(result, Is.EqualTo("Fizz"));
+        }
+
+        [Test]
+        public void When_nexNumberIsDivideBy5_return_buzzWord()
+        {
+            ExecuteCountMethod(4);
+
+            string result = _theGame.Count();
+
+            Assert.That(result, Is.EqualTo("Buzz"));
+        }
+
+        private void ExecuteCountMethod(int howManyTimes)
+        {
+            for (int i = 0; i < howManyTimes; i++)
+            {
+                _theGame.Count();
+            }
         }
     }
 }

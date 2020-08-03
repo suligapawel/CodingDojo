@@ -13,6 +13,9 @@ namespace CodingDojo.FizzBuzz.Main
             if (_counter % 3 == 0)
                 return "Fizz";
 
+            if (_counter % 5 == 0)
+                return "Buzz";
+
             return _counter.ToString();
         }
     }
