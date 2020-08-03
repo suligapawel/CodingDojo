@@ -9,6 +9,10 @@ namespace CodingDojo.FizzBuzz.Main
         public string Count()
         {
             _counter++;
+
+            if (_counter % 3 == 0)
+                return "Fizz";
+
             return _counter.ToString();
         }
     }
