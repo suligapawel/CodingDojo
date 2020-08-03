@@ -1,7 +1,7 @@
 ﻿using CodingDojo.Bowling.Main.Frames;
 using System.Collections.Generic;
 
-namespace CodingDojo.Bowling
+namespace CodingDojo.Bowling.Main
 {
     public class Bonus
     {

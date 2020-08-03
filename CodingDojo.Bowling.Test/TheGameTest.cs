@@ -1,4 +1,4 @@
-using CodingDojo.Bowling;
+using CodingDojo.Bowling.Main;
 using CodingDojo.Bowling.Main.Frames;
 using NUnit.Framework;
 

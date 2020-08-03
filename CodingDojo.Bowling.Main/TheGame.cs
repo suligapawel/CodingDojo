@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CodingDojo.Bowling
+namespace CodingDojo.Bowling.Main
 {
     public class TheGame
     {

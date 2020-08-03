@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main", "Bowling\Main\Main.csproj", "{D3361807-BC16-427F-AC47-BE2387B7898E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingDojo.Bowling.Main", "CodingDojo.Bowling.Main\CodingDojo.Bowling.Main.csproj", "{D3361807-BC16-427F-AC47-BE2387B7898E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bowling", "Bowling", "{CF5DEEDC-AF30-4468-94FA-8BD144ADFECA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Bowling\Test\Test.csproj", "{660E8774-796D-483D-8CFD-56120664D495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingDojo.Bowling.Test", "CodingDojo.Bowling.Test\CodingDojo.Bowling.Test.csproj", "{660E8774-796D-483D-8CFD-56120664D495}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{0BA8864B-5DFD-4C35-A02E-60FEFA681955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.FizzBuzz.Main", "CodingDojo.FizzBuzz.Main\CodingDojo.FizzBuzz.Main.csproj", "{45E263C1-5E0B-46D6-9ED7-12154F480111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingDojo.FizzBuzz.Test", "CodingDojo.FizzBuzz.Test\CodingDojo.FizzBuzz.Test.csproj", "{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,14 @@ Global
 		{660E8774-796D-483D-8CFD-56120664D495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660E8774-796D-483D-8CFD-56120664D495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660E8774-796D-483D-8CFD-56120664D495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E263C1-5E0B-46D6-9ED7-12154F480111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E263C1-5E0B-46D6-9ED7-12154F480111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E263C1-5E0B-46D6-9ED7-12154F480111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E263C1-5E0B-46D6-9ED7-12154F480111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D3361807-BC16-427F-AC47-BE2387B7898E} = {CF5DEEDC-AF30-4468-94FA-8BD144ADFECA}
 		{660E8774-796D-483D-8CFD-56120664D495} = {CF5DEEDC-AF30-4468-94FA-8BD144ADFECA}
+		{45E263C1-5E0B-46D6-9ED7-12154F480111} = {0BA8864B-5DFD-4C35-A02E-60FEFA681955}
+		{D3E2B8AF-A346-48E9-9A9F-745356AB9BBC} = {0BA8864B-5DFD-4C35-A02E-60FEFA681955}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F9A0B3D-22D0-42DF-9E3C-B9984A5ED44B}
