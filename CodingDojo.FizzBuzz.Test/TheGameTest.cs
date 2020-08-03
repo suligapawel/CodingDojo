@@ -1,5 +1,6 @@
 using CodingDojo.FizzBuzz.Main;
 using NUnit.Framework;
+using System;
 
 namespace CodingDojo.FizzBuzz.Test
 {
@@ -51,6 +52,14 @@ namespace CodingDojo.FizzBuzz.Test
             string result = _theGame.Count();
 
             Assert.That(result, Is.EqualTo("FizzBuzz"));
+        }
+
+        [Test]
+        public void When_isGreaterThan100_throw_OutOfRangeException()
+        {
+            ExecuteCountMethod(100);
+
+            Assert.Throws<ArgumentOutOfRangeException>(() => _theGame.Count());
         }
 
         private void ExecuteCountMethod(int howManyTimes)

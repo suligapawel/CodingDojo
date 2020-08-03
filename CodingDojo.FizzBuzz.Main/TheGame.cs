@@ -1,4 +1,6 @@
-﻿namespace CodingDojo.FizzBuzz.Main
+﻿using System;
+
+namespace CodingDojo.FizzBuzz.Main
 {
     public class TheGame
     {
@@ -11,6 +13,8 @@
         {
             _counter++;
 
+            ValidCounter();
+
             if (IsFizzBuzz())
                 return FIZZ + BUZZ;
 
@@ -21,6 +25,12 @@
                 return BUZZ;
 
             return _counter.ToString();
+        }
+
+        private void ValidCounter()
+        {
+            if (_counter > 100)
+                throw new ArgumentOutOfRangeException();
         }
 
         private bool IsFizzBuzz() => IsFizz() && IsBuzz();
