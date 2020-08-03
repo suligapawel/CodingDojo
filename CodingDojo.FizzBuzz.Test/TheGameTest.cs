@@ -43,6 +43,16 @@ namespace CodingDojo.FizzBuzz.Test
             Assert.That(result, Is.EqualTo("Buzz"));
         }
 
+        [Test]
+        public void When_nexNumberIsDivideBy3AndBy5_return_fizzBuzzWord()
+        {
+            ExecuteCountMethod(14);
+
+            string result = _theGame.Count();
+
+            Assert.That(result, Is.EqualTo("FizzBuzz"));
+        }
+
         private void ExecuteCountMethod(int howManyTimes)
         {
             for (int i = 0; i < howManyTimes; i++)
